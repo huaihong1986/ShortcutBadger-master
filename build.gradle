@@ -1,0 +1,32 @@
+buildscript {
+    repositories {
+        mavenCentral()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:2.1.2'
+    }
+    ext {
+        POM_NAME = 'Shortcutbadger'
+        POM_PACKAGING = 'aar'
+        POM_ARTIFACT_ID = 'shortcutbadger'
+        VERSION_NAME = '1.1.8'
+        VERSION_CODE = 1
+        GROUP = 'me.leolin'
+    }
+}
+
+
+subprojects {
+    buildscript {
+        repositories {
+            mavenCentral()
+        }
+        dependencies {
+            classpath 'com.android.tools.build:gradle:2.1.2'
+        }
+    }
+    repositories {
+        mavenCentral()
+    }
+
+}
